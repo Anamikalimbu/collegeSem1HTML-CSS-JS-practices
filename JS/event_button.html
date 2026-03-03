@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #messageArea {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #333;
+            padding: 10px;
+            border:
+                1px solid #ccc;
+            min-height: 30px;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Button Event Demo</h1>
+    <button id="triggerButton">Click Me!</button>
+    <div id="messageArea">
+        Waiting for a click...
+    </div>
+    <script src="./event_script.js"></script>
+</body>
+
+</html>

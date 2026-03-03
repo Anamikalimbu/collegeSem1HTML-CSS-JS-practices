@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+            border-left: 5px solid gold;
+            padding: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #status-message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <h1 id="page-title">Welcome to the DOM Demo!</h1>
+        <p id="intro-paragraph">This paragraph will be updated by JavaScript.</p>
+        <img id="main-image" src="https://picsum.photos/id/10/200/150" alt="Placeholder Image">
+        <div id="dynamic-section">
+            <p>Some initial content in the dynamic section.</p>
+        </div>
+        <button id="update-button">Update Content</button>
+        <button id="toggle-image-button">Toggle Image Visibility</button>
+        <button id="add-item-button">Add New Item</button>
+        <div id="status-message">Status: Waiting for action...</div>
+    </div>
+    <script src="dom_script.js"></script>
+</body>
+
+</html>
