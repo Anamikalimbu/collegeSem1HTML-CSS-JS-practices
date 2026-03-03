@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Semantic Blog Post</title>
+<style>
+/* Very basic styling to visualize the structure */
+body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0;
+background-color: #f4f4f4; color: #333; }
+/* Appropriate use of div for overall page layout centering */
+.page-wrapper { max-width: 960px; margin: 20px auto; background-color: #fff; box-shadow:
+0 0 10px rgba(0,0,0,0.1); }
+header#main-header { background: #333; color: #fff; padding-top: 30px; min-height: 70px;
+border-bottom: #0779e4 3px solid; }
+header#main-header h1 { text-align: center; margin: 0; padding-bottom: 10px; }
+nav#main-nav ul { padding: 0; list-style: none; text-align: center; }
+nav#main-nav ul li { display: inline; }
+nav#main-nav ul li a { color: #fff; text-decoration: none; padding: 5px 20px; }
+/* Appropriate use of div for main content area vs sidebar layout */
+.content-area { padding: 20px; overflow: hidden; /* Clears floats */}
+main#main-content { float: left; width: 65%; } /* Simple float for layout */
+aside#sidebar { float: right; width: 30%; padding: 10px; background: #f9f9f9; margin-left:
+5%; }
+article.blog-post header h2 { margin-top: 0; }
+article.blog-post .meta { background: #eee; padding: 5px; margin-bottom: 15px; font-size:
+0.9em; }
+section { margin-bottom: 20px; }
+section h3 { margin-top: 0; }
+figure { margin: 20px 0; }
+figcaption { font-style: italic; text-align: center; font-size: 0.9em; }
+footer#main-footer { background: #333; color: #fff; text-align: center; padding: 20px;
+margin-top: 20px; clear: both; /* Clears floats */}
+</style>
+</head>
+<body>
+<div class="page-wrapper"> <!-- DIV for overall page centering and styling -->
+<header id="main-header">
+<h1>My Awesome Blog</h1>
+<nav id="main-nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Articles</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+<div class="content-area"> <!-- DIV to manage layout of main content and sidebar -->
+<main id="main-content">
+<article class="blog-post">
+<header>
+<h2>The Importance of Semantic HTML</h2>
+<div class="meta"> <!-- DIV for styling meta info, could also be a <p> or
+<section> depending on content -->
+<p>Posted by Admin on <time datetime="2023-10-28">October 28,
+2023</time></p>
+</div>
+</header>
+<section id="introduction">
+<h3>Introduction</h3>
+<p>Semantic HTML refers to the use of HTML markup to reinforce the
+semantics, or meaning, of the information in webpages rather than merely to define its
+presentation or look. This is crucial for modern web development.</p>
+</section>
+<figure>
+<img src="https://picsum.photos/seed/semantics/600/300" alt="Abstract
+representation of code structure">
+<figcaption>Fig.1 - Visualizing semantic structure.</figcaption>
+</figure>
+<section id="benefits">
+<h3>Benefits of Semantic HTML</h3>
+<p>There are numerous benefits, including improved accessibility, better SEO,
+and easier code maintenance. When search engines and assistive technologies can understand
+your content's structure, everyone wins.</p>
+<ul>
+<li>Enhanced Accessibility</li>
+<li>Improved SEO</li>
+<li>Greater Readability and Maintainability</li>
+</ul>
+</section>
+<section id="common-tags">
+<h3>Common Semantic Tags</h3>
+<p>Some common tags include <code><article></code>,
+<code><section></code>, <code><nav></code>, <code><aside></code>,
+<code><header></code>, and <code><footer></code>.</p>
+</section>
+<footer>
+<p>Tags: <a href="#">HTML</a>, <a href="#">Web Development</a>, <a
+href="#">Semantics</a></p>
+</footer>
+</article>
+</main>
+<aside id="sidebar">
+<h3>Related Posts</h3>
+<ul>
+<li><a href="#">Understanding CSS</a></li>
+<li><a href="#">JavaScript Basics</a></li>
+<li><a href="#">Responsive Design Tips</a></li>
+</ul>
+<h3>Advertisement</h3>
+<img src="https://picsum.photos/seed/ad/200/150" alt="Placeholder Ad">
+</aside>
+</div>
+<footer id="main-footer">
+<p>© <time datetime="2023">2023</time> My Awesome Blog. All Rights Reserved.</p>
+</footer>
+</div> <!-- End .page-wrapper -->
+</body>
+</html>

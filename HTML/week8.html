@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Justify-Content and Align-Items</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .flex-container {
+            display: flex;
+            background-color: rgb(137, 157, 163);
+            margin-bottom: 30px; 
+            height: 150px; /* Fixed height to show align-items effect */
+            border: 2px solid #333;  
+        }
+        .item {
+            background-color: rgb(122, 42, 12);
+            padding: 10px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 80px; /*Fixed width for clarity*/
+        }
+        p {
+            margin: 10px 0;
+        }
+        /* Different justify-content and align-items combination */
+        .example-1 {
+            justify-content: flex-;
+            align-items: flex-start;
+        }
+        .example-2 {
+            justify-content: center;
+            align-items: center;
+        }
+        .example-3 {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .example-4 {
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .example-5 {
+            justify-content: space-around;
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p><strong>Example 1:</strong> justify-content: flex-start; align-items: flex-start;</p>
+        <div class="flex-container example-1">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <p><strong>Example 2:</strong> justify-content: center; align-items: center;</p>
+        <div class="flex-container example-2">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <p><strong>Example 3:</strong> justify-content: flex-end; align-items: flex-end;</p>
+        <div class="flex-container example-3">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <p><strong>Example 4:</strong> justify-content: space-between; align-items: stretch;</p>
+        <div class="flex-container example-4">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <p><strong>Example 5:</strong> justify-content: space-around; align-items: baseline;</p>
+        <div class="flex-container example-5">
+            <div class="item">Item 1</div>
+            <div class="item" style="font-size: 24px;">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+</body>
+
+</html>

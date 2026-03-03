@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.site-header {
+    background-color: #ebf1f3;
+    color: #0e0c0c;
+    padding: 0 20px; /*Padding for the overall header*/
+}
+.navbar {
+    display: flex; /* Key: Makes navbar a flex container */
+    justify-content: space-between; /* Puts space between logo, links, and cta */
+    align-items: center; /* Vertically align items in the center */
+    min-height: 70px; /* Minimum height for the navbar */
+}
+.logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #525c8c; /* Logo color */
+}
+.nav-links {
+display: flex; /* <<< Key: Makes ul a flex container for li items */
+gap: 20px; /* Space between navigation links */
+}
+.nav-links li a {
+padding: 8px 12px;
+transition: background-color 0.3s ease, color 0.3s ease;
+border-radius: 4px;
+}
+nav-links li a:hover {
+background-color: #555;
+color: #00c6ff;
+}
+.cta-button .button {
+background-color: #00c6ff;
+color: #333;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+.cta-button .button:hover {
+background-color: #00a2d4;
+}
+/* --- Responsive Adjustments for Smaller Screens --- */
+@media (max-width: 768px) {
+.navbar {
+flex-direction: column; /* Stack items vertically */
+align-items: flex-start; /* Align items to the start (left) */
+padding: 15px 20px; /* Adjust padding for stacked layout */
+}
+.nav-links {
+flex-direction: column; /* Stack nav links vertically */
+width: 100%; /* Make nav links take full width */
+margin-top: 15px; /* Space between logo and links */
+gap: 0; /* Remove horizontal gap for stacked links */
+}
+.nav-links li {
+width: 100%; /* Make each list item take full width */
+text-align: left;
+}
+.nav-links li a {
+display: block; /* Make links block to take full width */
+padding: 10px 0; /* Adjust padding for stacked links */
+border-bottom: 1px solid #444; /* Separator for stacked links */
+}
+.nav-links li:last-child a {
+border-bottom: none; /* Remove border from last link */
+}
+.nav-links li a:hover {
+background-color: transparent; /* Optional: change hover for stacked view */
+color: #00c6ff;
+}
+.cta-button {
+width: 100%;
+margin-top: 15px; /* Space between links and CTA */
+}
+.cta-button .button {
+display: block; /* Make button take full width */
+text-align: center;
+}
+}
+@media (max-width: 480px) {
+.logo a {
+font-size: 1.5em;
+}
+.nav-links li a {
+font-size: 0.9em;
+}
+.cta-button .button {
+font-size: 0.9em;
+padding: 8px 15px;
+}
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student HTML Table Example</title>
+</head>
+<body>
+<h1>Student Grade Report Table</h1>
+<p>This is a basic HTML table demonstrating the use of
+<code>&lt;table&gt;</code><code>&lt;tr&gt;</code>,<code>&lt;th&gt;</code>,<code>&lt;td&gt;</code> tags.</p>
+<!--The <table> tag is the container for all table elements-->
+<table>
+<!--The <caption> tag provides a title or description for the table-->
+<caption>Student Marks for Semester 1</caption>
+<!--<thead> defines the header section of the table-->
+<thead>
+<!--<tr> defines a table row-->
+<tr>
+<!--<th> defines a table header cell. By default, text is bold and centered -->
+<th scope="col">Name</th>
+<th scope="col">Math</th>
+<th scope="col">Science</th>
+<th scope="col">History</th>
+</tr>
+</thead>
+<!--<tbody> defines the main body content of the table-->
+<tbody>
+<!--Row 1 of data-->
+<tr>
+<!--<td> defines a standard table data cell-->
+<td>Alice</td>
+<td>85</td>
+<td>90</td>
+<td>78</td>
+</tr>
+<!--Row 2 of data-->
+<tr>
+<td>Bob</td>
+<td>76</td>
+<td>88</td>
+<td>92</td>
+</tr>
+<!--Row 3 of data-->
+<tr>
+<td>Charlie</td>
+<td>94</td>
+<td>81</td>
+<td>85</td>
+</tr>
+</tbody>
+<!--<tfoot> defines the footer section of the table, often used for summaries-->
+<!--Note:<tfoot> is placed before <tbody> for semantic reasons, but renders at the bottom-->
+<tfoot>
+<tr>
+<th>Average Score</th>
+<td>85</td>
+<td>86.3</td>
+<td>85</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
